@@ -1,0 +1,23 @@
+{
+  "name": "vmd",
+  "version": "1.0.0",
+  "description": "My own Markdown Parser for making documents.",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vipranarayan14/vmd.git"
+  },
+  "keywords": [
+    "markdown",
+    "parser"
+  ],
+  "author": "Prasanna Venkatesh T S",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vipranarayan14/vmd/issues"
+  },
+  "homepage": "https://github.com/vipranarayan14/vmd#readme"
+}
