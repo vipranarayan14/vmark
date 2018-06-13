@@ -1,14 +1,15 @@
 {
-  "name": "vmd",
+  "name": "vmark",
   "version": "1.0.0",
   "description": "My own Markdown Parser for making documents.",
   "author": "Prasanna Venkatesh T S <vipranarayan14@gmail.com>",
-  "main": "dist/vtokenize.npm.js",
+  "main": "dist/vmark.npm.js",
   "files": [
-    "dist/vtokenize.npm.js"
+    "dist/vmark.npm.js"
   ],
   "scripts": {
     "build": "rimraf dist && webpack",
+    "test": "node ./examples/sample.js > sample.out",
     "eslint": "eslint ./**/*.js",
     "precommit": "npm run eslint",
     "preversion": "npm run test",

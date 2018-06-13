@@ -1,8 +1,8 @@
 const path = require('path');
 
 const entry = './src/';
-const libraryName = 'vTokenize';
-const filename = 'vtokenize';
+const libraryName = 'VMark';
+const filename = 'vmark';
 
 const baseConfig = {
   entry,
