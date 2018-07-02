@@ -1,18 +1,16 @@
-import { getMaxTokenLength, getSliceDetails } from './slice-details';
 import { convertTokens } from './convert-tokens';
-import { vTokenize } from 'vtokenize';
+import { makeTokens } from './make-tokens';
+import { parseTokens } from './parse-tokens';
 
 export class VMark {
 
   constructor(str) {
 
-    const tokens = vTokenize(
-      str,
-      getMaxTokenLength(),
-      getSliceDetails
-    );
+    const tokens = makeTokens(str);
 
-    const convertedTokens = convertTokens(tokens);
+    const ast = parseTokens(tokens);
+
+    const convertedTokens = convertTokens(ast);
 
     return convertedTokens.join('');
 
