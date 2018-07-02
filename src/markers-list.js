@@ -1,4 +1,4 @@
-export const sliceList = {
+export const markersList = {
 
   ' ': {
     role: 'space'
