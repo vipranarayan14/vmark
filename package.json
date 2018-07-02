@@ -1,6 +1,6 @@
 {
   "name": "vmark",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "My own Markdown Parser for making documents.",
   "author": "Prasanna Venkatesh T S <vipranarayan14@gmail.com>",
   "main": "dist/vmark.npm.js",
