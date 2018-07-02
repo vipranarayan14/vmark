@@ -1,8 +1,8 @@
-import { sliceList } from './slice-list';
+import { markersList } from './markers-list';
 
 export const getSliceDetails = slice => {
 
-  const sliceDetails = sliceList[slice];
+  const sliceDetails = markersList[slice];
 
   if (sliceDetails) {
 
@@ -11,8 +11,8 @@ export const getSliceDetails = slice => {
       sliceDetails,
 
       {
-        slice,
-        type: 'marker'
+        type: 'marker',
+        value: slice
       }
     );
 
@@ -20,23 +20,8 @@ export const getSliceDetails = slice => {
 
   return {
     role: 'none',
-    slice,
-    type: 'unknown'
+    type: 'unknown',
+    value: slice
   };
-
-};
-
-export const getMaxTokenLength = () => {
-
-  const minTokenLength = 1;
-  const tokenLengths = [minTokenLength];
-
-  Object.keys(sliceList).forEach(key =>
-
-    tokenLengths.push(key.length)
-
-  );
-
-  return Math.max(...tokenLengths);
 
 };
