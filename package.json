@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "rimraf dist && webpack",
-    "test": "node ./examples/sample.js > sample.out",
+    "test": "mocha",
     "eslint": "eslint ./**/*.js",
     "precommit": "npm run eslint",
     "preversion": "npm run test",
@@ -24,8 +24,10 @@
     "babel-loader": "7.1.2",
     "babel-preset-env": "1.6.1",
     "babel-register": "6.26.0",
+    "chai": "^4.1.2",
     "eslint": "4.15.0",
     "husky": "0.14.3",
+    "mocha": "^5.2.0",
     "rimraf": "2.6.2",
     "webpack": "3.10.0"
   },
