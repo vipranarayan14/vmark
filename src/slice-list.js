@@ -1,7 +1,11 @@
 export const sliceList = {
 
+  ' ': {
+    role: 'space'
+  },
+
   '#': {
-    role: 'heading1',
+    role: 'heading1'
   },
 
   '##': {
